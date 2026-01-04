@@ -1,0 +1,16 @@
+{
+    "name": "Go Space Invaders",
+    "image": "mcr.microsoft.com/devcontainers/go:1.25",
+    
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "golang.go"
+        ]
+      }
+    },
+  
+    "postCreateCommand": "go mod init github.com/Acero-AD/goinvaders && go get github.com/gdamore/tcell/v3",
+    
+    "remoteUser": "vscode"
+}
